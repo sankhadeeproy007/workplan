@@ -13,6 +13,8 @@ const ProjectList = ({ projects }) => {
               id={project.id}
               title={project.title}
               content={project.content}
+              firstName={project.authorFirstName}
+              lastName={project.authorLastName}
             />
           </Link>
         ))}

@@ -23,7 +23,11 @@ const store = createStore(
       logger
     ),
     reduxFirestore(fbconfig),
-    reactReduxFirebase(fbconfig, { attachAuthIsReady: true })
+    reactReduxFirebase(fbconfig, {
+      attachAuthIsReady: true,
+      useFirestoreForProfile: true,
+      userProfile: 'users'
+    })
   )
 );
 
