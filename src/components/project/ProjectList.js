@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import ProjectSummary from './ProjectSummary';
 
 const ProjectList = ({ projects }) => {
@@ -15,6 +16,7 @@ const ProjectList = ({ projects }) => {
               content={project.content}
               firstName={project.authorFirstName}
               lastName={project.authorLastName}
+              createdAt={project.createdAt}
             />
           </Link>
         ))}
